@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--metadata-->
+	<meta charset="utf-8">
+	<!--to force IEusers to use Edge browser-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!--for responsive website,taking device's width as width and zoom =1-->
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<!--importing bootstrap framework-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!--importing self made css-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--to import Oxygen font-->
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+	<!--to import Lora font-->
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<title>Restaurant Site</title>
+</head>
+<body>
+	
+	<!--importing jquery online-->
+	<script type="text/javascript" src="js/jquery-2.2.5.min.js"></script>
+	<!--importing bootrap.js and self js file-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--For Heading etc-->
+	<header>
+		<!--keeping all in a navbar(bootstrap) and header-nav is in styles.css-->
+		<nav id="header-nav" class="navbar navbar-default">
+			<!--using container to contain various elements-->
+			<div class="container">
+				<!--to contain main nav-bar along with dropdownbutton options-->
+				<div class="navbar-header">
+					<!--pull-left so that Name of restaurant is shifted to right of logo, visible-md and -lg means logo will be visible only in medium and large display img-logo is defined in styles.css-->
+					<a href="RestaurantSite.html" class="pull-left visible-md visible-lg">
+						<div id="img-logo" alt="Logo Image"></div>
+					</a>
+					<!--to keep Name and certified in a box-->
+					<div class="navbar-brand">
+						<a href="RestaurantSite.html"><h1>Pepe's Restaurant</h1></a>
+						<p>
+							<span class="glyphicon glyphicon-star-empty">Certified</span>
+						</p>
+					</div>
+					<!--for making dropdown menu which is by default floated to right,collapsable-nav is userdefined-->
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        					<span class="sr-only">Toggle navigation</span>
+       						<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+      				</button>
+				</div>
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+
+						<li class="visible-xs">
+							<a href="RestaurantSite.html">
+								<span class="glyphicon glyphicon-home"></span> Home</a>
+						</li>
+					
+						<li>
+							<a href="menu-categories.html" class="active">
+								<span class="glyphicon glyphicon-cutlery"></span>
+								<br class="hidden-xs"> Menu</a>
+							</a>
+						</li>
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-info-sign"></span>
+								<br class="hidden-xs"> About</a>
+						</li>
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-certificate"></span>
+								<br class="hidden-xs"> Awards</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+							<a href="tel:05265-273898">
+								<span>05265-273898</span>
+							</a>
+							<div>*We Deliver too</div>
+							
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header> <!--END of Header-->
+
+	<!--To appear call content in extra-small screen-->
+	<div id="call-btn" class="visible-xs">
+		<a class="btn" href="tel:0526527-3898">
+			<span class="glyphicon glyphicon-earphone"></span>0526527-3898</a>
+	</div>
+	<div id="xs-deliver" class="text-center visible-xs">*We Deliver</div>
+	<!--Main Container-->
+	
+	<div id="main-content" class="container">
+		<h2 id="menu-categories-title" class="text-center">Lunch menu</h2>
+		<div class="text-center">Lunch will be served only after 1pm</div>
+		<section class="row">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D01</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna ornare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D02</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna ornare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.on orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetraon orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetraon orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetraon orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="clearfix visible-md-block visible-lg-block"></div>
+
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D03</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna oron orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetraon orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetraon orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetranare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D04</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna ornare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="clearfix visible-md-block visible-lg-block"></div>
+
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D05</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna ornare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menu-item-photo">
+							<div>D06</div>
+							<img src="images/menu/lunch/shahi-paneer.jpg" class="img-responsive" alt="Item" height="200" width="300">
+						</div>
+						<div class="menu-item-price">
+							$10.95<span>(pint)</span>$14.50<span>(quarter)</span>
+						</div>
+					</div>
+					<div class="menu-item-discription col-sm-7">
+						<h3 class="menu-item-title">Chhole Bhature</h3>
+						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec fermentum mauris. Fusce commodo sapien in urna ornare molestie. Sed ut turpis non orci hendrerit porta in ut risus. Praesent rhoncus pharetra pharetra.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+			
+			<div class="clearfix visible-md-block visible-lg-block"></div>
+		
+		</section>
+		
+	</div>	<!--End of main content-->
+	
+	<!--Footer Starts/-->
+	<footer class="panel-footer">
+		<div class="container">
+			<div class="row">
+				<section id="hours" class="col-sm-4">
+					<span>Hours:</span><br>
+					Monday-Friday: 10:00am - 9:00pm<br>
+					Saturday: Closed<br>
+					Sunday: 10:00am - 11:00pm<br>
+					<hr class="visible-xs"> 	
+				</section>
+				<section id="address" class="col-sm-4">
+					<span>Address:</span><br>
+					Pensylvania 23rd Bakers Street<br>
+					2A oppo. Shaqs Building
+					<p>*Free Home-Delivery within range of 10-12 miles. After that $2 per miles*</p>
+					<hr class="visible-xs">
+				</section>
+				<section id="testimonials" class="col-sm-4">
+					<p>"The best continental food I have ever eaten. Just love the environment"</p>
+					<p>"Will never forget the Samose along with hari chutney. Best thing happened to me"</p>
+				</section>
+			</div>
+			<div class="text-center">&copy; Copyright Pepe's Restaurant </div>
+		</div>
+	</footer><!--END of Footer-->
+ </body>
+</html> 

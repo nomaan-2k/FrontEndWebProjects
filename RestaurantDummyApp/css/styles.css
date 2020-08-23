@@ -1,0 +1,413 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #edb32b;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/*Home Page*/
+/*Header*/
+#header-nav{
+	background-color: #1f1717;
+	border-radius: 0;
+	border: 0; 
+}
+
+#img-logo{
+	background: url('../images/another-logo.png') no-repeat;
+	margin-left: 10px 15px 10px 0px;
+	width: 150px;
+	height: 150px;
+}
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #fff;
+	text-transform: uppercase;
+	color: #edb32b;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.navbar-brand p span{
+	vertical-align: middle;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	color: green;
+}
+
+.navbar-brand a:hover , .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #edb32b;
+	text-align: center;
+}
+
+#nav-list a:hover , #nav-list a.active {
+	color: #1f1717;
+	background-color: #edb32b; 
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+} 
+
+#phone a{
+	margin-top: 15px;
+	padding-top: 5px;
+	text-align: right;
+	padding-right: 0px;
+	padding-left: 0;
+	padding-bottom: 0;
+
+}
+
+#phone div{
+	padding-top: -5px;
+	text-align: right;
+	padding-right: 5px;
+	color: green;
+}
+
+.navbar-header button.navbar-toggle , .navbar-header .icon-bar{
+	border: 1px solid #edb32b;
+}
+
+.navbar-header button.navbar-toggle{
+	margin-top: -15px;
+	clear: both;
+
+}
+
+}
+#collapsable-nav a{
+	font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+	font-size: 1em;
+	margin-right: 5px;
+}
+/*END of Header*/
+
+/*Main Content*/
+.container .jumbotron{
+		box-shadow: 0px 0px 50px maroon;
+		border: solid 2px maroon; 
+}
+
+#menu-tile , #specials-tile , #map-tile {
+	height: 250px;
+	width: 100%;
+	border: 2px solid maroon;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	color: #aaa;
+	box-shadow: 0px 0px 15px maroon;
+}
+
+#menu-tile:hover , #specials-tile:hover , #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+	color: #fff; 
+}
+
+#menu-tile{
+	background: url('../images/menu.jpg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile{
+	background: url('../images/specials.jpg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile span , #menu-tile span , #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0; /*dont know the reason but on removing it the map written gets disappeared*/
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	background-color: #000;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+/*END of main content*/
+
+/*Footer content*/
+.panel-footer{
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 30px;
+}
+
+#hours , #address{
+	line-height: 1.8em;
+}
+
+#hours > span , #address > span{
+	font-size: 1.3em;
+}
+
+#address > p{
+	font-size: 0.8em;
+	color: green;
+	line-height: 1.1em;
+}
+
+#testimonials p{
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#testimonials p:nth-child(2){
+	margin-top: 20px;
+}
+/*END of Footer*/
+/*END of Home Page*/
+
+/*Menu-Categories Main-menu*/
+.category-tile{
+	border: 2px solid maroon;
+	margin: 0 auto 15px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	color: #aaa;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+	text-align: center;
+	width: 100%;
+	opacity: 0.8;
+	text-transform: uppercase;
+}
+
+.category-tile:hover{
+	box-shadow: 0px 2px 5px 2px #cccccc;
+	color: #fff;
+}
+
+#menu-categories-title{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#menu-categories-title + div{
+	margin-bottom: 50px;
+	margin-top: 0px;
+	color: #000;
+}
+/*END of Menu-Categories Main-menu*/
+
+/*Single-Category Main-menu*/
+.menu-item-tile{
+	margin-bottom: 25px;
+	color: #000;
+}
+
+.menu-item-tile > hr{
+	width: 80%
+	color: #000;
+}
+
+.menu-item-tile .menu-item-price{
+	font-size: 1.1em;
+	text-align: right;
+}
+
+.menu-item-tile .menu-item-price span{
+	font-size: 0.6em;
+}
+
+.menu-item-photo{
+	max-width: 300px;
+	position: relative;
+	border: 2px solid maroon;
+	padding-left: 0px;
+}
+
+.menu-item-photo div{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: green;
+	width: 80px;
+	text-align: center;
+}
+
+h3.menu-item-title{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.menu-item-details{
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.menu-item-discription{
+	padding-left: 0px;
+}
+/*For large devices*/
+@media (min-width: 1200px){
+	.container .jumbotron{
+		background: url('../images/restaurant-1200.jpg') no-repeat ;
+		height: 795px;
+	}
+}
+
+/*For medium devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+.container .jumbotron{
+		background: url('../images/restaurant-992.jpg') no-repeat ;
+		height: 657px;
+	}
+}
+
+/*For small devices*/
+@media (min-width: 768px) and (max-width: 991px){
+.container .jumbotron{
+		background: url('../images/restaurant-768.jpg') no-repeat ;
+		height: 509px;
+	}
+
+/*.menu-item-tile:nth-child(odd){
+	padding-left: 0px;
+	padding-right: 15px;
+}
+
+.menu-item-tile:nth-child(even){
+	padding-right: 0px;
+	padding-left: 15px;
+}*/
+
+}
+
+/*For extra-small devices*/
+@media (max-width: 767px){
+.navbar-brand h1{
+		margin-bottom: 5px;
+		font-size: 5vw;
+		}
+
+.navbar-brand p span{
+		margin-top: -10px;
+		font-size: 0.75em;
+			height: 30px;
+
+	}
+
+#call-btn {
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5px;
+	font-size: 2em;
+	text-align: center;
+	background-color: #1f1717;
+	box-shadow: 0 0 7px maroon;
+	border: 2px solid white;
+}
+
+#call-btn a{
+	font-size: 0.8em;
+	color: #edb32b;
+}
+
+#call-btn a span{
+	font-size: 1.1em;
+	padding-right: 5px;
+}
+
+#call-btn a:hover,#call-btn{
+	color: white;
+}
+
+#xs-deliver{
+	color: black;
+	text-transform: uppercase; 	
+}
+
+.container .jumbotron{
+	padding: 0;
+	}
+
+.container .jumbotron img{
+	border-radius: 5px;
+}
+
+#menu-tile , #map-tile , #specials-tile{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}	
+
+.panel-footer section{
+	text-align: center;
+	margin-bottom: 30px
+}
+
+.panel-footer section:nth-child(3){
+	margin-bottom: 0px;
+}
+
+.panel-footer section hr{
+	width: 50%;
+}
+
+.menu-item-photo{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-item-discription{
+	text-align: center;
+	padding-top: 10px; 
+}
+
+.menu-item-tile .menu-item-price{
+	/*margin-right: auto;
+	margin-left: auto;*/
+	text-align: center;
+}
+}
+
+/*For mobiles and all*/
+@media (max-width: 530px){
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#menu-tile , #map-tile , #specials-tile{
+	width: 280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+	.col-xxs-12{
+		position: relative;
+  		min-height: 1px;
+  		padding-right: 15px;
+  		padding-left: 15px;
+  		float: left;
+  		width: 100%;
+	}
+}
